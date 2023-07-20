@@ -11,7 +11,7 @@ public class ModelDTOMapper {
         rewardDTO.setType(reward.getType());
         rewardDTO.setName(reward.getName());
         rewardDTO.setQuantity(reward.getQuantity());
-
+        rewardDTO.setPrice(reward.getPrice());
         return rewardDTO;
     }
     public Reward rewardDTOtoReward(Reward reward, RewardDTO rewardDTO){
@@ -19,6 +19,7 @@ public class ModelDTOMapper {
         reward.setName(rewardDTO.getName());
         reward.setType(rewardDTO.getType());
         reward.setQuantity(rewardDTO.getQuantity());
+        reward.setPrice(rewardDTO.getPrice());
         return reward;
     }
 }

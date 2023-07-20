@@ -17,4 +17,5 @@ public class Reward {
     private String name;
     private int quantity;
     private ERewardType type;
+    private double price;
 }

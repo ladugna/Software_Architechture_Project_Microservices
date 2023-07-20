@@ -30,7 +30,9 @@ public class RewardService {
         Reward updatedReward =modelDTOMapper.rewardDTOtoReward(reward,rewardDTO);
         return rewardRepository.save(reward);
     }
+
     public Reward getReward(String id){
+//        System.out.println(rewardRepository.findById(id));
         return rewardRepository.findById(id).orElseThrow(()->new ResourceNotFoundException("Reward","id",id));
     }
 }

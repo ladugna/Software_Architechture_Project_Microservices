@@ -9,12 +9,12 @@ import sa.RewardService.RewardService.dto.RewardDTO;
 import sa.RewardService.RewardService.service.RewardService;
 
 @RestController
-@RequestMapping("/reward")
+@RequestMapping("/rewards")
 public class RewardController {
     @Autowired
     private RewardService rewardService;
 
-    @PostMapping("/re")
+    @PostMapping
     public ResponseEntity<Reward> addReward(@RequestBody RewardDTO rewardDTO){
         Reward reward = rewardService.addReward(rewardDTO);
         return new ResponseEntity<Reward>(reward, HttpStatus.OK);

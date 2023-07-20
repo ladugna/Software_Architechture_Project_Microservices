@@ -21,6 +21,9 @@ public class AvatarBuilder {
     private StudentPutFeignClient studentPutFeignClient;
     @Autowired
     private ElementDeleteFeignClient elementDeleteFeignClient;
+    @Autowired
+    private RewardGetFeignClient rewardGetFeignClient;
+
 //    private List<Element> elements=new ArrayList<>();
 //    private List<Element> elements=new ArrayList<>();
 
@@ -151,10 +154,43 @@ public class AvatarBuilder {
         else avatar.setHatColor(avatarColorDTO.getColor());
         return avatar;
     }
+    public Reward buyReward(String studentId, String rewardId){
+        Student student = studentGetFeignClient.getStudent(studentId);
+        Reward reward = rewardGetFeignClient.getReward(rewardId);
+
+        List<Reward> rewards= student.getRewards();
+        boolean hasMatchingType = rewards.stream()
+                .anyMatch(rew -> rew.getType().equals(reward.getType()));
+
+        System.out.println(reward+"avatar builder");
+
+        if(student.getScore()>reward.getPrice() &&!hasMatchingType){
+            if(reward.getType().name().equalsIgnoreCase("Element")){
+                student.setScore(student.getScore()+reward.getPrice());
+            }
+            else{
+                student.setScore(student.getScore()-reward.getPrice());
+                rewards.add(reward);
+                System.out.println(reward);
+                student.setRewards(rewards);
+            }
+            System.out.println(student.getRewards());
+
+            studentPutFeignClient.updateStudent(studentId,student);
+            return reward;
+        }
+        else if(hasMatchingType){
+            return null;
+        }
+        else throw new ScoreNotEnoughException("Reward","id",rewardId);
+
+
+    }
+
     public void submitAvatar(String studentId){
         Student student = studentGetFeignClient.getStudent(studentId);
         Avatar avatar=student.getAvatar();
-//        avatarkafkaTemplate.send("avatarSaveTopic",avatar);
+//       avatarkafkaTemplate.send("avatarSaveTopic",avatar);
     }
 
     @FeignClient(name = "Element-Service")
@@ -182,4 +218,10 @@ public class AvatarBuilder {
         @DeleteMapping("/element/{id}")
         public Element deleteElement(@PathVariable String id);
     }
+    @FeignClient(name="Reward-Service")
+    interface RewardGetFeignClient{
+        @GetMapping("/rewards/{id}")
+        public Reward getReward(@PathVariable String id);
+    }
+
 }

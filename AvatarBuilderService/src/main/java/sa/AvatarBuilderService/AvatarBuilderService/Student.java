@@ -27,7 +27,7 @@ public class Student {
     private String teachingClassGroup;
     private double score;
     private Avatar avatar;//needs to change
-    private List<RewardItem> rewards;
+    private List<Reward> rewards= new ArrayList<>();
     private List<Element> elements= new ArrayList<>();
 
 //    private StudentClassDTO studentClassDTO;

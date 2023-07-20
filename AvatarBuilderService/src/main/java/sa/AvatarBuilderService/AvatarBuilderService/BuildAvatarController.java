@@ -54,6 +54,11 @@ public class BuildAvatarController {
         avatarPutFeignClient.updateAvatar(avatarId,avatar);
         return new ResponseEntity<>(avatar,HttpStatus.OK);
     }
+    @PostMapping("/reward/{rewardId}")
+    public ResponseEntity<Reward> buyReward(@PathVariable String studentID, @PathVariable String rewardId ){
+        Reward reward = avatarBuilder.buyReward(studentID,rewardId);
+        return new ResponseEntity<Reward>(reward,HttpStatus.OK);
+    }
 
     @FeignClient(name = "Avatar-Service")
     interface AvatarPostFeignClient{
