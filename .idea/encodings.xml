@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/API_Gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/API_Gateway/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AvatarBuilderService/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AvatarBuilderService/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AvatarService/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AvatarService/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ElementService/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ElementService/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/RewardService/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/RewardService/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SchoolService/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SchoolService/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/StudentService/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/StudentService/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/TeacherService/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/TeacherService/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/UserService/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/UserService/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/UserServicee/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/UserServicee/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demoService/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demoService/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

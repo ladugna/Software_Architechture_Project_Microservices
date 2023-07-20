@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/API_Gateway/API_Gateway.iml" filepath="$PROJECT_DIR$/API_Gateway/API_Gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AvatarBuilderService/AvatarBuilderService.iml" filepath="$PROJECT_DIR$/AvatarBuilderService/AvatarBuilderService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AvatarService/AvatarService.iml" filepath="$PROJECT_DIR$/AvatarService/AvatarService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ElementService/ElementService.iml" filepath="$PROJECT_DIR$/ElementService/ElementService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka/Eruka.iml" filepath="$PROJECT_DIR$/eureka/Eruka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RewardService/RewardService.iml" filepath="$PROJECT_DIR$/RewardService/RewardService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/SAProject.iml" filepath="$PROJECT_DIR$/.idea/SAProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SchoolService/SchoolService.iml" filepath="$PROJECT_DIR$/SchoolService/SchoolService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StudentService/StudentService.iml" filepath="$PROJECT_DIR$/StudentService/StudentService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TeacherService/TeacherService.iml" filepath="$PROJECT_DIR$/TeacherService/TeacherService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UserService/UserService.iml" filepath="$PROJECT_DIR$/UserService/UserService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demoService/demoService.iml" filepath="$PROJECT_DIR$/demoService/demoService.iml" />
+    </modules>
+  </component>
+</project>

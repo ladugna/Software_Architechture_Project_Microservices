@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/UserService/pom.xml" />
+        <option value="$PROJECT_DIR$/AvatarService/pom.xml" />
+        <option value="$PROJECT_DIR$/RewardService/pom.xml" />
+        <option value="$PROJECT_DIR$/SchoolService/pom.xml" />
+        <option value="$PROJECT_DIR$/ElementService/pom.xml" />
+        <option value="$PROJECT_DIR$/StudentService/pom.xml" />
+        <option value="$PROJECT_DIR$/TeacherService/pom.xml" />
+        <option value="$PROJECT_DIR$/demoService/pom.xml" />
+        <option value="$PROJECT_DIR$/UserServicee/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka/pom.xml" />
+        <option value="$PROJECT_DIR$/API_Gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/AvatarBuilderService/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_20" project-jdk-name="openjdk-19" project-jdk-type="JavaSDK" />
+</project>
